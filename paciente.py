@@ -2,7 +2,7 @@
 
 class Paciente:
 
-    # ---------------- CONSTRUCTOR ----------------
+
     def __init__(self, nombre, id, edad, bpm, spo2, temperatura):
         self.set_nombre(nombre)
         self.set_id(id)
@@ -11,7 +11,7 @@ class Paciente:
         self.set_spo2(spo2)
         self.set_temperatura(temperatura)
 
-    # ---------------- GETTERS ----------------
+
     def get_nombre(self):
         return self._nombre
 
@@ -30,7 +30,7 @@ class Paciente:
     def get_temperatura(self):
         return self._temperatura
 
-    # ---------------- SETTERS con validaciones ----------------
+
     def set_nombre(self, nombre):
         if not isinstance(nombre, str) or nombre.strip() == "":
             raise ValueError("El nombre no puede estar vacío.")
@@ -61,7 +61,7 @@ class Paciente:
             raise ValueError("Temperatura inválida.")
         self._temperatura = temperatura
 
-    # ---------------- MÉTODO DE LÓGICA BIOMÉDICA ----------------
+
     def calcular_riesgo(self):
 
         # Crítico
@@ -78,4 +78,5 @@ class Paciente:
 
         # Normal
         return "Normal"
+
 
