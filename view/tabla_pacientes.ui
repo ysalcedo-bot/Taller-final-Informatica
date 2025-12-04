@@ -1,0 +1,54 @@
+<!-- ================= TABLA PACIENTES (tabla_pacientes.ui) ================= -->
+<ui version="4.0">
+<class>TablaPacientes</class>
+<widget class="QDialog" name="TablaPacientes">
+<property name="windowTitle"><string>Pacientes Registrados</string></property>
+<layout class="QVBoxLayout" name="verticalLayout">
+
+
+<item>
+<widget class="QLabel" name="labelTitulo">
+<property name="text"><string><center><h1>PACIENTES REGISTRADOS</h1></center></string></property>
+</widget>
+</item>
+
+
+<item>
+<widget class="QLabel" name="labelImagen">
+<property name="pixmap"><pixmap>hospital.gif</pixmap></property>
+<property name="alignment"><set>Qt::AlignCenter</set></property>
+</widget>
+</item>
+
+
+<item>
+<widget class="QTableWidget" name="tablaPacientes">
+<columncount>6</columncount>
+<rowcount>0</rowcount>
+<column>
+<property name="text"><string>Nombre</string></property>
+</column>
+<column>
+<property name="text"><string>ID</string></property>
+</column>
+<column>
+<property name="text"><string>Edad</string></property>
+</column>
+<column>
+<property name="text"><string>BPM</string></property>
+</column>
+<column>
+<property name="text"><string>SpO₂</string></property>
+</column>
+<column>
+<property name="text"><string>Temperatura</string></property>
+</column>
+</widget>
+</item>
+
+
+</layout>
+</widget>
+<resources/>
+<connections/>
+</ui>

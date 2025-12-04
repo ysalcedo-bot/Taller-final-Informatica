@@ -1,0 +1,39 @@
+<!-- Below are three .ui files in sequence. Save each section as its own .ui file in /view -->
+<!-- ================= MAIN WINDOW (main_window.ui) ================= -->
+<ui version="4.0">
+<class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+<property name="windowTitle"><string>Unidad de Cuidados Intensivos</string></property>
+<widget class="QWidget" name="centralwidget">
+<layout class="QVBoxLayout" name="verticalLayout">
+<item>
+<widget class="QLabel" name="labelTitulo">
+<property name="text"><string><center><h1>UNIDAD DE CUIDADOS INTENSIVOS</h1></center></string></property>
+</widget>
+</item>
+<item>
+<widget class="QLabel" name="labelImagen">
+<property name="pixmap"><pixmap>hospital.gif</pixmap></property>
+<property name="alignment"><set>Qt::AlignCenter</set></property>
+</widget>
+</item>
+<item>
+<layout class="QHBoxLayout" name="horizontalLayout">
+<item>
+<widget class="QPushButton" name="btnRegistrar">
+<property name="text"><string>Registrar Paciente</string></property>
+</widget>
+</item>
+<item>
+<widget class="QPushButton" name="btnVerPacientes">
+<property name="text"><string>Ver Pacientes</string></property>
+</widget>
+</item>
+</layout>
+</item>
+</layout>
+</widget>
+</widget>
+<resources/>
+<connections/>
+</ui>
